@@ -112,7 +112,7 @@ public class FileService {
         System.gc();
 
         SendSimpleEmailEvent sendEmail = new SendSimpleEmailEvent(
-                "qendrimzeneli195@gmail.com,jdev.fer@gmail.com,gjendi1999@live.com,argjendzuka@digitizeict.com",
+                "emails...",
                 "File Upload Completed",
                 """
                 Hello Sir/Madam,
