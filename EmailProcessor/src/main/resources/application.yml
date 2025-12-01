@@ -1,0 +1,27 @@
+spring:
+  application:
+    name: EmailProcessor
+  mail:
+    host: ${SMTP_HOST}
+    port: ${SMTP_PORT}
+    username: ${SMTP_USER}
+    password: ${SMTP_PASS}
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+file-processor:
+  sender_email: ${SMTP_USER}
+
+rabbitmq:
+  email:
+    queue: javauploadfile
+  exchange:
+    name: javauploadfile_exchange
+  routingkey:
+    name: javauploadfile_routingkey
+
+server:
+  port: 9090
